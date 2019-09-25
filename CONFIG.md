@@ -31,7 +31,8 @@ allprojects {
 app module 的 build.gradle 文件在 Project 目录中位置：
 ![构建脚本目录](./images/config/module_build_gradle_structure.jpg)
 如需引入指定版本 SDK（所有 SDK 版本号与官网发版一致），则在 app module 的 build.gradle 中修改 maven 仓库版本号即可，如下图所示（4.2.4版本）：
-```properties
+
+```xml
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.tencent.map:tencent-map-vector-sdk:4.2.4'
