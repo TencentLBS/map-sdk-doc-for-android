@@ -6,7 +6,7 @@
 
 ### 认识地图类型
 
-腾讯位置服务地图类型，定义了地图最底部图层的内容，包括背景面、背景色、道路、标注、文字等，默认提供的地图底图，支持四种类型
+腾讯的地图类型，定义了地图最底部图层的内容，包括背景面、背景色、道路、标注、文字等，默认提供的地图底图，支持四种类型
 
 1. MAP_TYPE_NORMAL 标准图
 2. MAP_TYPE_SATELLITE 卫星图
@@ -23,8 +23,8 @@
 1. MAP_TYPE_TRAFFIC_NAVI 导航+路况白昼图
 2. MAP_TYPE_TRAFFIC_NIGHT 导航+路况夜间图
 
-<img src="../images/basic/map-style-navi-daytime.png" style="zoom:25%;" />
-<img src="../images/basic/map-style-navi-night.png" style="zoom:25%;" />
+![构建脚本目录](../images/basic/map-style-navi-daytime.png)
+![构建脚本目录](../images/basic/map-style-navi-night.png)
 
 ### 设置地图类型
 
