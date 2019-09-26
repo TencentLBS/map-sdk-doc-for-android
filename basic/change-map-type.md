@@ -13,10 +13,10 @@
 3. MAP_TYPE_NAVI 导航图
 4. MAP_TYPE_NIGHT 夜间图
 
-<img src="../images/basic/map-style-normal.png" style="zoom:25%;" />
-<img src="../images/basic/map-style-navi.png" style="zoom:25%;" />
-<img src="../images/basic/map-style-satellite.png" style="zoom:25%;" />
-<img src="../images/basic/map-style-night.png" style="zoom:25%;" />
+![构建脚本目录](../images/basic/map-style-normal.png)
+![构建脚本目录](../images/basic/map-style-navi.png)
+![构建脚本目录](../images/basic/map-style-satellite.png)
+![构建脚本目录](../images/basic/map-style-night.png)
 
 以及一些组合地图类型
 

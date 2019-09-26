@@ -63,7 +63,7 @@ implementation fileTree(dir: 'libs', include: ['*.jar'])
 ![构建脚本快照](./images/config/module_build_gradle.jpg)
 
 #### 注意事项：
-依照上述方法集成SDK以后，就不需要使用第一种方式在libs文件夹下导入对应SDK的 so 和 jar 包，否则会出现类冲突。
+依照上述方法集成SDK以后，就不需要使用第一种方式集成地图 SDK，否则会出现类冲突。
 
 ## 权限配置
 地图SDK需要使用网络，访问硬件存储等系统权限，在AndroidManifest.xml文件里，添加如下权限：

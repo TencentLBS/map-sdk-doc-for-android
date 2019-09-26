@@ -6,7 +6,8 @@
 
 ### 地图创建
 
-<img src="../images/basic/basicmap.png" alt="basicmap" style="zoom:23%;"/>
+![构建脚本目录](../images/basic/basicmap.png)
+
 > 地图效果图
 
 ##### 创建地图视图
