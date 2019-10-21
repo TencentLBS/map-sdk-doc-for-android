@@ -24,22 +24,22 @@
   - 视野范围设置
   - 限制显示区域
 - 覆盖物
-  - 绘制点标记
-  - 绘制线
-  - 绘制面
-  - 自定义瓦片图层
-  - 绘制热力图
-  - 元素压盖顺序
+  - [绘制点标记](./overlay/points.md)
+  - [绘制窗口信息](./overlay/infoWindow.md)
+  - [绘制线](./overlay/lines.md)
+  - [绘制面](./overlay/shapes.md)
+  - [自定义瓦片图层](./overlay/tiles.md)
+  - [绘制热力图](./overlay/hotmap.md)
+  - [元素压盖顺序](./overlay/level.md)
 - 地理信息检索
   - 地点搜索
   - 关键词输入提示
   - 行政区划
   - 地址/逆地址解析
   - 路线规划服务
-- 地图手势
-  - 手势回调
-  - 手势开关
-  - 自定义手势
+- 地图事件
+  - [手势控制](./event/gesture-control.md)
+  - [状态事件回调](./event/status-callback.md)
 
 ---
 

@@ -1,7 +1,3 @@
-<style>
-    @import url(style/style.css);
-</style>
-
 #工程配置
 
 这里我们提供了腾讯地图 SDK 在 Android Studio 中的工程配置方法。
