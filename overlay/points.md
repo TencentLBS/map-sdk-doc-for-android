@@ -74,7 +74,8 @@ Marker marker = mTencentMap.addMarker(new MarkerOptions(position));
 //创建Marker对象之前，设置属性
 LatLng position = new LatLng(40.011313,116.391907);
 BitmapDescriptor custom = BitmapDescriptorFactory.fromResource(R.drawable.marker);
-mCustomMarker = mTencentMap.addMarker(new MarkerOptions(position)                                      																			 .icon(custom)
+mCustomMarker = mTencentMap.addMarker(new MarkerOptions(position)
+                                      .icon(custom)
                                       .alpha(0.7f)
                                       .flat(true)
                                       .clockwise(false)

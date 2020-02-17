@@ -13,10 +13,9 @@
   - [显示3D建筑物](./basic/show-3d-building.md)
   - [海外地图](./basic/oversea-map.md)
 - 地图控件
-  - 显示定位
-  - 控件位置调整
-    - Logo
-    - 比例尺
+  - [显示定位](./widget/location.md)
+  - [地图商标](./widget/logo.md)
+  - [比例尺](./widget/scale.md)
   - 控件交互
 - 地图视野控制
   - 基础视野操作
