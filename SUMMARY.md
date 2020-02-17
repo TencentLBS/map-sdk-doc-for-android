@@ -13,10 +13,8 @@
   - [显示3D建筑物](./basic/show-3d-building.md)
   - [海外地图](./basic/oversea-map.md)
 - 地图控件
-  - [显示定位](./widget/location.md)
-  - [地图商标](./widget/logo.md)
-  - [比例尺](./widget/scale.md)
-  - 控件交互
+  - [基础控件设置](./widget/basic_setting.md)
+  - [控件位置调整](./widget/layout.md)
 - 地图视野控制
   - 基础视野操作
   - 视野动画操作
@@ -30,6 +28,7 @@
   - [自定义瓦片图层](./overlay/tiles.md)
   - [绘制热力图](./overlay/hotmap.md)
   - [元素压盖顺序](./overlay/level.md)
+- [显示定位](./location.md)
 - 地理信息检索
   - 地点搜索
   - 关键词输入提示
