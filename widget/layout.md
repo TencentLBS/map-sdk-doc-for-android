@@ -1,6 +1,8 @@
 # 控件位置调整
 
-腾讯地图 SDK 的 logo 和比例尺控件允许开发者调整它们在 MapView 中的位置，以满足开发者自己应用的设计需求。
+### 简介
+
+腾讯地图 SDK 的 logo、比例尺和指南针控件允许开发者调整它们在 MapView 中的位置，以满足开发者自己应用的设计需求。
 
 ### logo
 
@@ -74,3 +76,18 @@ tencentMap.getUiSettings().setLogoPosition(
     `left` position 为 `TencentMapOptions.SCALEVIEW_POSITION_BOTTOM_LEFT` 或 `TencentMapOptions.SCALEVIEW_POSITION_TOP_LEFT` 时，该值生效，不需要偏移请传负数
 
     `right` position 为 `TencentMapOptions.SCALEVIEW_POSITION_BOTTOM_RIGHT` 或 `TencentMapOptions.SCALEVIEW_POSITION_TOP_RIGHT` 时，该值生效，不需要偏移请传负数
+
+### 指南针
+
+我们在 `UiSettings` 类中提供了设置指南针在 MapView 中的位置的方法：
+
+1. setCompassExtraPadding(int padding)
+   
+   `padding` 设置指南针上边缘距离 MapView 上边缘的距离，单位：像素
+
+2. setCompassExtraPadding(int xPadding, int yPadding)
+
+   设置指南针距离 MapView 左边缘和上边缘的距离
+
+   `xPadding` 指南针左边缘距离 MapView 左边缘的值，单位：像素
+   `yPadding` 指南针上边缘距离 MapView 上边缘的值，单位：像素
