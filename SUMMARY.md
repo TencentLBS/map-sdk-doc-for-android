@@ -13,7 +13,7 @@
   - [显示3D建筑物](./basic/show-3d-building.md)
   - [海外地图](./basic/oversea-map.md)
 - 地图控件
-  - [基础控件设置](./widget/basic_setting.md)
+  - [基础控件设置](./widget/basic-setting.md)
   - [控件位置调整](./widget/layout.md)
 - 地图视野控制
   - 基础视野操作
@@ -30,11 +30,13 @@
   - [元素压盖顺序](./overlay/level.md)
 - [显示定位](./location.md)
 - 地理信息检索
-  - 地点搜索
-  - 关键词输入提示
-  - 行政区划
-  - 地址/逆地址解析
-  - 路线规划服务
+  - [检索功能概述](./service/summary.md)
+  - [地点搜索](./service/place.md)
+  - [关键词输入提示](./service/suggestion.md)
+  - [行政区划](./service/district.md)
+  - [地址解析](./service/geo-code.md)
+  - [逆地址解析](./service/regeo-code.md)
+  - [路线规划服务](./service/route-plan.md)
 - 地图事件
   - [手势控制](./event/gesture-control.md)
   - [状态事件回调](./event/status-callback.md)
