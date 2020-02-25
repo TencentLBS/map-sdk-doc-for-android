@@ -25,7 +25,7 @@
   - [绘制窗口信息](./overlay/infoWindow.md)
   - [绘制线](./overlay/lines.md)
   - [绘制面](./overlay/shapes.md)
-  - [自定义瓦片图层](./overlay/tiles.md)
+  - [自定义瓦片层](./overlay/tiles.md)
   - [绘制热力图](./overlay/hotmap.md)
   - [元素压盖顺序](./overlay/level.md)
 - [显示定位](./location.md)

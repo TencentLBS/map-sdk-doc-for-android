@@ -1,20 +1,20 @@
-瓦片覆盖层
+自定义瓦片层
 ==============
 ### 简介
 
 ##### 什么是瓦片
 
 瓦片是组成地图形貌的基本元素，腾讯地图SDK将世界地图在不同的缩放级别下，以高清256\*256或者标准512\*521为单元划分成地图瓦片数据。
-除了内置的瓦片覆盖层（[热力图](HeatMap.md)、海外图、个性化图层等）之外，用户可以通过自定义TileProvider来实现添加自定义瓦片功能。
+除了内置的瓦片覆盖层（[热力图](hotmap.md)、海外图、个性化图层等）之外，用户可以通过自定义TileProvider来实现添加自定义瓦片功能。
 
 ##### 关于地图坐标系和缩放级别
 
 腾讯地图坐标是使用GCJ-02坐标（投影坐标系），您可以使用[腾讯坐标转换服务](https://lbs.qq.com/webservice_v1/guide-convert.html)将其他坐标系坐标转换成GCJ-02坐标。
 目前可支持编辑的缩放级别为\[3-18\]，您也可以通过`TencentMap.getMinZoomLevel()`和`TencentMap.getMaxZoomLevel()`接口获取当前最大和最小缩放级别，来调整对应的配置
 
-##### 什么是瓦片覆盖层
+##### 什么是瓦片层
 
-瓦片覆盖层，是为了展示地图个性化数据提供能力，您可以把某些区域内的地图瓦片，覆盖成独特风格的图片数据。
+瓦片层，是为了展示地图个性化数据提供能力，您可以把某些区域内的地图瓦片，覆盖成独特风格的图片数据。
 地图SDK提供了非常简便的接口方法，来实现自定义瓦片能力。
 
 如开发者没有基础地图绘制数据，腾讯地图提供了云端[个性化地图](https://lbs.qq.com/console/customized/set/)能力，可以支持在线修改地图元素的样式
@@ -24,10 +24,10 @@
 
 如开发者有生产瓦片地图数据的能力，还不知道如果接入的话，接下来我们通过两部分讲解，完成这部分的指导：
 
-1. 添加一个瓦片覆盖层
-2. 移除瓦片覆盖层
+1. 添加一个瓦片层
+2. 移除瓦片层
 
-### 添加一个瓦片覆盖层
+### 添加一个瓦片层
 
 使用[UrlTileProvider](../library/src/main/java/com/tencent/tencentmap/mapsdk/maps/model/UrlTileProvider.java)抽象类，能够更简便地实现瓦片数据的生成，它实现了
 [TileProvider](../library/src/main/java/com/tencent/tencentmap/mapsdk/maps/model/TileProvider.java)接口，通过(x,y)坐标和zoom级别来区分不同URL，请求URL获取瓦片数据，
@@ -79,7 +79,7 @@ private class MyTileProvider extends UrlTileProvider {
 ```java
 class DemoTileProviderManager {
     /**
-     * 移除瓦片覆盖层
+     * 添加瓦片层
      */	 
     public TileOverlay addMyTileProvider(TencentMap map){
       MyTileProvider provider = new MyTileProvider();
@@ -93,13 +93,13 @@ class DemoTileProviderManager {
 }
 ```
 
-### 移除瓦片覆盖层
+### 移除瓦片层
 
 您可以直接调用TileOverlay.remove()接口进行移除
 ```java
 class DemoProvider {
     /**
-     * 移除瓦片覆盖层
+     * 移除瓦片层
      */
     public void removeTileOverlay() {
         myTileOverlay.remove();

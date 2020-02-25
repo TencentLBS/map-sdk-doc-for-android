@@ -31,11 +31,11 @@
 
 ##### 不同地图视图类型的差异
 
-| 视图类型       | 内部实现         | 视图动画 | 性能     | 列表显示 | 多实例 |
-| :------------- | ---------------- | -------- | -------- | -------- | ------ |
-| MapView        | GLSurfaceView    | 不支持   | 高       | 不支持   | 支持   |
-| TextureMapView | TextureView      | 支持     | 中       | 不支持   | 支持   |
-| MapRenderLayer | Surface+GLThread | 外部控制 | 外部控制 | 支持     | 支持   |
+| 视图类型       | 内部实现         | 视图动画 | 性能     | ListView显示 | 多实例 |
+| :------------- | ---------------- | -------- | -------- | ------------ | ------ |
+| MapView        | GLSurfaceView    | 不支持   | 高       | 不流畅       | 支持   |
+| TextureMapView | TextureView      | 支持     | 中       | 不流畅       | 支持   |
+| MapRenderLayer | Surface+GLThread | 外部控制 | 外部控制 | 流畅         | 支持   |
 
 ###### 通过MapView创建地图
 
@@ -76,7 +76,7 @@ parentView.addView(mapView);
 | setHandDrawMapEnable(boolean enable)         | 设置手绘图开关               |
 | setMultipleInfoWindowEnable(boolean enable)  | 设置InfoWindow多窗口模式开关 |
 
-##### 地图生命周期
+##### 绑定地图生命周期
 
 创建地图视图之后，需要跟应用绑定生命周期，以保障地图在应用的不同生命周期中，能够正确地处理显示和刷新逻辑
 

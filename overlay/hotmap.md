@@ -1,12 +1,12 @@
-热力图覆盖层
+绘制热力图层
 ========================
 
 ### 简介
 
-热力图是一种瓦片覆盖层，它能够在地图上表达数据的密度和分布状况。
+热力图是一种自定义瓦片层，它能够在地图上表达数据的密度和分布状况。
 
 在4.2.5版本之前，虽然提供了一种热力图实现接口，但并不标准化，4.2.5版本完成了新的标准化热力图接口，
-在com.tencent.map.sdk.utilities包名下，而旧的热力图方案，已经迁移到兼容库中。
+在com.tencent.map.sdk.utilities包名下，而旧的热力图方案，已经迁移到兼容库[^maven]中。
 
 新版本热力图显示效果更细腻、自然，在操作热力图的过程也更加简单，下面是一张截图效果：
 
@@ -88,8 +88,11 @@ mProvider.setOpacity(0.7);
 mOverlay.clearTileCache();
 mOverlay.reload();
 ```
-#### 移除热力图
+### 移除热力图
 
 ```java
 mOverlay.remove();
 ```
+
+[^maven]: com.tencent.map:compat-v4:lastest
+
