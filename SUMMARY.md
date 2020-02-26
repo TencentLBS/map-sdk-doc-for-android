@@ -26,6 +26,7 @@
   - [绘制线](./overlay/lines.md)
   - [绘制面](./overlay/shapes.md)
   - [自定义瓦片层](./overlay/tiles.md)
+  - [个性化图层](./overlay/customlayer.md)
   - [绘制热力图](./overlay/hotmap.md)
   - [元素压盖顺序](./overlay/level.md)
 - [显示定位](./location.md)
@@ -44,9 +45,10 @@
 ---
 
 - 地图组件
-  - 点聚合
-  - 小车平移动画
+  - [点聚合](./module/points-cluster.md)
+  - [小车平移动画](./module/car-smooth-moving.md)
 
 ------
 
-- 注意事项
+- [注意事项](notice.md)
+
