@@ -1,7 +1,7 @@
 # Summary
 
-* [介绍](./README.md)
-* [工程配置](./CONFIG.md)
+- [介绍](./README.md)
+- [工程配置](./config.md)
 
 -----
 
@@ -12,14 +12,14 @@
   - [个性化地图](./basic/style-map.md)
   - [显示3D建筑物](./basic/show-3d-building.md)
   - [海外地图](./basic/oversea-map.md)
+- 地图视野控制
+  - [设置地图视野](./camera/set-camera.md)
+  - [视野动画操作](./camera/animate-camera.md)
+  - [视野范围设置](./camera/show-map-region.md)
+  - [限制显示区域](./camera/restrict-map-region.md)
 - 地图控件
   - [基础控件设置](./widget/basic-setting.md)
   - [控件位置调整](./widget/layout.md)
-- 地图视野控制
-  - 基础视野操作
-  - 视野动画操作
-  - 视野范围设置
-  - 限制显示区域
 - 覆盖物
   - [绘制点标记](./overlay/points.md)
   - [绘制窗口信息](./overlay/infoWindow.md)
