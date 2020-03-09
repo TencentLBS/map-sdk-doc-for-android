@@ -173,24 +173,25 @@ PolylineOptions polylineOptions = new PolylineOptions()
 可以通过 PolylineOptions 对象的属性直接设置分段颜色，示例代码（也包含了其他属性的设置）如下：
 
 ```java
+// 设置分段线的顶点索引，这个索引值的数量必须和下面的颜色列表数量相同
+int[] indexes = {0,1,2,3,4};
+// 设置每段索引之间的颜色，这个颜色同样支持纹理颜色，即 PolylineOptions.Colors 中定义的 [0, 10] 值
+int[] colors = {
+                0xff00ff00, // 线上点 [0, 1] 之间为绿色
+                0xffffff00, // 线上点 [1, 2] 之间为黄色
+                0xffff0000, // 线上点 [2, 3] 之间为红色
+                0xffffff00, // 线上点 [3, 4] 之间为黄色
+                0xff00ff00  // 线上点 [4, 最后一个点] 之间为绿色
+        };
+
 // 构造 PolylineOpitons
 PolylineOptions polylineOptions = new PolylineOptions()
-        .addAll(latLngs)
-        // 折线设置圆形线头
-        .lineCap(true)
-        // 折线宽度为15像素
-        .width(15);
-
-
-
-// 绘制折线
-Polyline polyline = tencentMap.addPolyline(polylineOptions);
-// 设置分段，线的顶点索引
-int[] indexes = {0,1,2,3,4,5};
-// 设置每段索引之间的颜色，这个颜色同样支持纹理颜色，即 PolylineOptions.Colors 中定义的 [0, 10] 值
-int[] colors = {0xff00ff00, 0xffffff00, 0xffff0000, 0xffffff00, 0xff00ff00};
-// 将分段颜色设置给线1
-polyline.setColors(color,index);
+                .addAll(latLngs)
+                .lineCap(true)
+                .width(15f)
+                //设置彩虹线的颜色
+                .colors(colors, indexes);
+mTencentMap.addPolyline(polylineOptions);
 ```
 
 ![彩虹蚯蚓](../images/overlay/color_segment_line.png)
