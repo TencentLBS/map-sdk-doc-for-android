@@ -22,14 +22,10 @@
 
 ### 添加一个简单的热力图
 
-为了添加一个简单的热力图，你需要提前准备好带有坐标分布的数据集，首先，创建一个
-[HeatMapTileProvider](../library/src/main/java/com/tencent/map/sdk/utilities/heatmap/HeatMapTileProvider.java)，
-然后，将准备好的数据集设置到`HeatMapTileProvider`中，再创建一个[TileOverlayOptions](../library/src/main/java/com/tencent/tencentmap/mapsdk/maps/model/TileOverlayOptions.java)，
-将`HeatMapTileProvider`配置到`TileOverlayOptions`中，并添加TileOverlay到地图中即可。
+为了添加一个简单的热力图，你需要提前准备好带有坐标分布的数据集，首先，创建一个HeatMapTileProvider
+然后，将准备好的数据集设置到`HeatMapTileProvider`中，再创建一个`TileOverlayOptions`，将`HeatMapTileProvider`配置到`TileOverlayOptions`中，并添加`TileOverlay`到地图中即可。
 
-`HeatMapTileProvider`类实现了[TileProvider](../library/src/main/java/com/tencent/tencentmap/mapsdk/maps/model/TileProvider.java)接口，
-使它能够为地图提供热力瓦片图，`HeatMapTileProvider`将`LatLng`或者[WeightedLatLng](../library/src/main/java/com/tencent/map/sdk/utilities/heatmap/WeightedLatLng.java)
-数据集合，根据默认的半径、渐变色、透明度进行计算，并生成对应缩放级别的瓦片图片。
+`HeatMapTileProvider`类实现了`TileProvider`接口，使它能够为地图提供热力瓦片图，`HeatMapTileProvider`将`LatLng`或者`WeightedLatLng`数据集合，根据默认的半径、渐变色、透明度进行计算，并生成对应缩放级别的瓦片图片。
 
 详细使用方法：
 
@@ -94,5 +90,5 @@ mOverlay.reload();
 mOverlay.remove();
 ```
 
-[^maven]: com.tencent.map:compat-v4:lastest
+
 

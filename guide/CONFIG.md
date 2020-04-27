@@ -1,6 +1,6 @@
 # AndroidStudio配置
 
-推荐使用AndroidStudio作为开发工具。这里我们提供了腾讯地图 SDK 在 AndroidStudio 中的工程配置方法。
+推荐使用AndroidStudio作为开发工具，这里我们提供了腾讯地图 SDK 在 AndroidStudio 中的工程配置方法。
 
 ## 第1步： 获取Key
 
@@ -13,55 +13,58 @@
 ## 第3步：在项目中集成SDK
 在 AndroidStudio 项目中集成腾讯地图 SDK 主要有两种方式：
 
-1.手动将腾讯地图 sdk 的 jar 包和 so 库导入到工程
-
-2.通过 Gradle 配置 maven 或 jcenter 仓库集成 SDK
+1. 手动将腾讯地图 sdk 的 jar 包和 so 库导入到工程
+2. 通过 Gradle 配置 maven 或 jcenter 仓库集成 SDK
 
 我们更推荐使用第二种方式，即通过 maven 导入腾讯地图 SDK，下面我们详细介绍下两种方式。
 
 ### 方式一：通过拷贝 jar 包、so 库添加 SDK
 
-1.首先，请您在[这里](https://lbs.qq.com/android_v1/log.html)获取腾讯地图 SDK for Andorid 及其 demo。
+1. 首先，请您在[这里](https://lbs.qq.com/android_v1/log.html)获取腾讯地图 SDK for Andorid 及其 demo。
 
-2.解压下载的压缩包并拷贝文件
-压缩包解压后的文件目录结构
-以4.3.4版本的地图功能为例，解压后，得到一个 libs文件夹，该文件夹中包含tencent-mapsdk-release-4.3.4.b8edc92f.jar文件和一个jniLibs文件夹(文件中包含所有的so库文件)
+2. 解压下载的压缩包并拷贝文件
 
-3.将 lib 目录下的"*.jar"文件拷贝到 AndroidStudio 项目对应的 app/libs/ 文件夹下。
+   以4.3.4版本的地图功能为例，解压后，得到一个 libs文件夹，该文件夹中包含tencent-mapsdk-release-
 
-![](http://p.qpic.cn/lbsconsole/0/74ce56c91a50a1fd7c9a4535e5dcfe82/0)
+   4.3.4.b8edc92f.jar文件和一个jniLibs文件夹(文件中包含所有的so库文件)
 
-4.将 jniLibs 目录下的所有文件按照原目录格式，拷贝到AndroidStudio项目对应的 app/src/main/jniLibs/ 目录下。  
+3. 将 lib 目录下的"*.jar"文件拷贝到 AndroidStudio 项目对应的 app/libs/ 文件夹下。
+
+   ![](http://p.qpic.cn/lbsconsole/0/74ce56c91a50a1fd7c9a4535e5dcfe82/0)
+
+4. 将 jniLibs 目录下的所有文件按照原目录格式，拷贝到AndroidStudio项目对应的 app/src/main/jniLibs/ 目录下。
 
 ![](http://p.qpic.cn/lbsconsole/0/7fc1ca0c53da067e9bcdc87ca4829087/0)
 ### 方式二：通过 Gradle 配置 maven 或 jcenter 仓库集成 SDK
 
-1.在 Project 的 build.gradle 文件中配置 repositories，添加 maven 或 jcenter 仓库地址。
+1. 在 Project 的 build.gradle 文件中配置 repositories，添加 maven 或 jcenter 仓库地址。
 
-AndroidStudio 默认会在 Project 的 build.gradle 为所有module自动添加 jcenter 仓库地址，如果已存在，则不需要重复添加。
-```java
-buildscript {
-    repositories {
-        google()
-        jcenter()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
-    }
-}
-//向所有模块配置仓库：
-allprojects {
-    repositories {
-        google()
-        jcenter()
-        mavenCentral()
-    }
-}
-```
+   AndroidStudio 默认会在 Project 的 build.gradle 为所有module自动添加 jcenter 仓库地址，如果已存在，则不需要重复添加。
 
-2.在主工程 app module 的 build.gradle 文件配置 dependencies
-如需引入指定版本 SDK（所有 SDK 版本号与官网发版一致），则在 app module 的 build.gradle 中修改 maven 仓库版本号。
+   ```
+   buildscript {
+       repositories {
+           google()
+           jcenter()
+           mavenCentral()
+       }
+       dependencies {
+           classpath 'com.android.tools.build:gradle:3.5.0'
+       }
+   }
+   //向所有模块配置仓库：
+   allprojects {
+       repositories {
+           google()
+           jcenter()
+           mavenCentral()
+       }
+   }
+   ```
+
+2. 在主工程 app module 的 build.gradle 文件配置 dependencies
+
+   如需引入指定版本 SDK（所有 SDK 版本号与官网发版一致），则在 app module 的 build.gradle 中修改 maven 仓库版本号。
 
 ```java 
 dependencies {
