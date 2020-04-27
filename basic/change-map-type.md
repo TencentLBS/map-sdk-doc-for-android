@@ -8,22 +8,30 @@
 
 腾讯的地图类型，定义了地图最底部图层的内容，包括背景面、背景色、道路、标注、文字等，默认提供的地图底图，支持四种类型
 
-1. MAP_TYPE_NORMAL 标准图
-2. MAP_TYPE_SATELLITE 卫星图
-3. MAP_TYPE_NAVI 导航图
-4. MAP_TYPE_NIGHT 夜间图
+1.MAP_TYPE_NORMAL 标准图
 
 ![构建脚本目录](../images/basic/map-style-normal.png)
+
+2.MAP_TYPE_NAVI 导航图
+
 ![构建脚本目录](../images/basic/map-style-navi.png)
+
+3.MAP_TYPE_SATELLITE 卫星图
+
 ![构建脚本目录](../images/basic/map-style-satellite.png)
+
+4.MAP_TYPE_NIGHT 夜间图
+
 ![构建脚本目录](../images/basic/map-style-night.png)
 
 以及一些组合地图类型
 
-1. MAP_TYPE_TRAFFIC_NAVI 导航+路况白昼图
-2. MAP_TYPE_TRAFFIC_NIGHT 导航+路况夜间图
+1.MAP_TYPE_TRAFFIC_NAVI 导航+路况白昼图
 
 ![构建脚本目录](../images/basic/map-style-navi-daytime.png)
+
+2.MAP_TYPE_TRAFFIC_NIGHT 导航+路况夜间图
+
 ![构建脚本目录](../images/basic/map-style-navi-night.png)
 
 ### 设置地图类型

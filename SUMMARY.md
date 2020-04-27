@@ -2,7 +2,7 @@
 
 * [介绍](./README.md)
 * [获取Key](./guide/getKey.md)
-* [AndroidStudio工程配置](./guide/config.md)
+* [AndroidStudio配置](./guide/config.md)
 * [开发注意事项](./guide/notice.md)
 
 -----

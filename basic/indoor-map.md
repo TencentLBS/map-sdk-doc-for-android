@@ -18,7 +18,7 @@
 
 室内图签权KEY和地图KEY是相同的，还没有申请地图KEY，可以到[腾讯地图位置服务中心官网](https://lbs.qq.com/)注册账号，申请地图KEY，目前室内图权限申请没有开通在线申请，如需要请联系[室内图商务](https://lbs.qq.com/contractus.html)协助办理。
 
-已开通室内图权限的KEY，按照工程配置中的[Key配置](../CONFIG.md#key配置)介绍完成配置。
+已开通室内图权限的KEY，按照AndroidStudio配置中的在AndroidManifest.xml的application标签中配置key完成配置。
 
 ##### 室内图展示开关
 
