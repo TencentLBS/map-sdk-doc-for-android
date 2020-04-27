@@ -15,14 +15,22 @@ Android地图SDK支持经纬度坐标与屏幕像素坐标互转。
 
 ### 示例
 
+屏幕坐标与经纬度之间的转换：
 ```
-        //获取坐标转换操作对象
-        Projection projection = tencentMap.getProjection();
-        //获取当前地图经纬度对应的屏幕坐标
-        Point screen = projection.toScreenLocation(latLng);
-        //获取屏幕上的点对应当前地图的经纬度
-        LatLng transferLatLng = projection.fromScreenLocation(screen);
-        //获取当前地图视野的经纬度
-        VisibleRegion region = projection.getVisibleRegion();
+// 经纬度转换为像素点
+Projection projection = tencentMap.getProjection();
+Point screen = projection.toScreenLocation(latLng);
+Toast.makeText(getApplicationContext(), ("屏幕坐标：" + new Gson().toJson(screen)), Toast.LENGTH_LONG).show();
+
+// 像素点转换为经纬度
+LatLng transferLatLng = projection.fromScreenLocation(screen);
+Toast.makeText(getApplicationContext(), ("经纬度坐标：" + new Gson().toJson(transferLatLng)), Toast.LENGTH_LONG).show();
+```
+当前屏幕地图的视野范围：
+```
+// 获取当前屏幕地图的视野范围
+Projection projection = tencentMap.getProjection();
+VisibleRegion region = projection.getVisibleRegion();
+Toast.makeText(getApplicationContext(), ("当前地图的视野范围：" + new Gson().toJson(region)), Toast.LENGTH_LONG).show();
 ```
 

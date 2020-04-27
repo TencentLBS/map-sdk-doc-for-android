@@ -157,9 +157,9 @@ __4.__ 公交
 
 
 2. 步行、骑行的返回结果数据结构与驾车基本一致，返回的数据可查询 [接口文档](https://lbs.qq.com/AndroidDocs/doc_3d/index.html)
-    
+   
 3. 公交
-    
+   
     __TransitResultObject__
     <table>
     <thead>
@@ -209,7 +209,7 @@ __4.__ 公交
             <td colspan="3">distance</td>
             <td>本段的距离，单位：米</td>
         </tr>
-        <tr>、
+        <tr>
             <td colspan="3">duration</td>
             <td>预计用时，单位：分钟</td>
         </tr>

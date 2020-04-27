@@ -19,7 +19,7 @@
 
 ##### 提前准备
 
-按照[工程配置](../CONFIG.md)完成之后，在应用工程中的新建一个Activity文件，在onCreate方法创建地图。
+按照[AndroidStudio配置](../guide/CONFIG.md)完成之后，在应用工程中的新建一个Activity文件，在onCreate方法创建地图。
 
 ##### 创建地图视图
 
@@ -130,7 +130,7 @@ mTencentMap.setOnMapLoadedCallback(new OnMapLoadedCallback() {
 
 3. 初始化出现崩溃
 
-   > 初始化崩溃常见的问题是地图引擎库没有正常配置，或者混淆出现问题导致，请参考[工程配置](../CONFIG.md)进行完整的配置。
+   > 初始化崩溃常见的问题是地图引擎库没有正常配置，或者混淆出现问题导致，请参考[AndroidStudio配置](../guide/CONFIG.md)进行完整的配置。
    
 4. 地图中间出现“鉴权失败,请检查你的key”
 
