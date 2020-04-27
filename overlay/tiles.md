@@ -22,15 +22,14 @@
 
 如开发者有室内CAD相关的数据，希望在地图上进行展示，我们提供了商务级[室内地图](https://lbs.qq.com/indoor/index.html)合作能力，能帮助开发者更快的完成需求。
 
-如开发者有生产瓦片地图数据的能力，还不知道如果接入的话，接下来我们通过两部分讲解，完成这部分的指导：
+如开发者有生产瓦片地图数据的能力，还不知道如何接入的话，接下来我们通过两部分讲解，完成这部分的指导：
 
 1. 添加一个瓦片层
 2. 移除瓦片层
 
 ### 添加一个瓦片层
 
-使用[UrlTileProvider](../library/src/main/java/com/tencent/tencentmap/mapsdk/maps/model/UrlTileProvider.java)抽象类，能够更简便地实现瓦片数据的生成，它实现了
-[TileProvider](../library/src/main/java/com/tencent/tencentmap/mapsdk/maps/model/TileProvider.java)接口，通过(x,y)坐标和zoom级别来区分不同URL，请求URL获取瓦片数据，
+使用UrlTileProvider抽象类，能够更简便地实现瓦片数据的生成，它实现了TileProvider接口，通过(x,y)坐标和zoom级别来区分不同URL，请求URL获取瓦片数据，
 并自动完成瓦片图片的生成。
 
 详细使用方法：

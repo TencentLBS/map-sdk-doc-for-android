@@ -4,7 +4,7 @@
 
 地图 SDK 提供了定位点控件，帮助开发者方便地实现地图上的定位点绘制需求。下面是一个定位点的效果图：
 
-![默认定位点效果](./images/widget/default_location.png)
+![](http://p.qpic.cn/lbsconsole/0/bb1747d42817864adbfcc265771cedca/0)
 
 <span style="color:red">请注意，地图 SDK 只提供地图的展示效果，定位能力需要接入 [定位SDK](https://lbs.qq.com/geo/index.html)。</span>
 
@@ -43,11 +43,13 @@
         //用户通过这个监听器就可以设置地图的定位点位置
         if(i == TencentLocation.ERROR_OK && locationChangedListener != null){
             Location location = new Location(tencentLocation.getProvider());
-            //设置经纬度以及精度
+            //设置经纬度
             location.setLatitude(tencentLocation.getLatitude());
             location.setLongitude(tencentLocation.getLongitude());
-            //这个值会被设置为定位点上表示精度的圆形半径
+            //设置精度，这个值会被设置为定位点上表示精度的圆形半径
             location.setAccuracy(tencentLocation.getAccuracy());
+            //设置定位标的旋转角度，注意 tencentLocation.getBearing() 只有在 gps 时才有可能获取
+            location.setBearing((float) tencentLocation.getBearing());
             //将位置信息返回给地图
             locationChangedListener.onLocationChanged(location);
         }
