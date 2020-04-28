@@ -4,7 +4,7 @@
 
 ## 第1步： 获取Key
 
-[点我获取Key>>](./guide/getKey)
+[点我获取Key>>](../guide/getKey.md)
 
 ##  第2步：创建AndroidStudio项目
 
@@ -32,13 +32,23 @@
 
    <img src="http://p.qpic.cn/lbsconsole/0/74ce56c91a50a1fd7c9a4535e5dcfe82/0" width="50%" align='left'>
 
-    右键该jar包，选择add as library，弹出如下窗口：
+   <br>
+
+   右键该jar包，选择add as library，弹出如下窗口：
+
+   <br>
 
    <img src="http://p.qpic.cn/lbsconsole/0/f5138490c1e6c6609b46a9a445362c08/0" align='left'>
 
+   <br>
+
    点击OK即可，变成下图所示就是导入成功：
 
+   <br>
+
    <img src="http://p.qpic.cn/lbsconsole/0/7681d7ca63b119e850ff821a0c2a0d27/0" align='left'>
+
+   <br>
 
 4. 将 jniLibs 目录下的所有文件按照原目录格式，拷贝到AndroidStudio项目对应的 app/src/main/jniLibs/ 目录下。
 
