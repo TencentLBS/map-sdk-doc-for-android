@@ -40,7 +40,7 @@ polygon.remove();
 
 绘制的多边形效果如下图所示：
 
-![多边形](../images/overlay/polygon.png)
+<img src="../images/overlay/polygon.png" align='left'>
 
 ### 圆形
 
@@ -86,4 +86,4 @@ circle.remove();
 
 绘制的圆效果如下图所示：
 
-![圆形](../images/overlay/circle.png)
+<img src="../images/overlay/circle.png" align='left'>

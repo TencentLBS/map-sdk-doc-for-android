@@ -4,7 +4,7 @@
 
 ## 第1步： 获取Key
 
-[点我获取Key>>](/mobile/AndroidMapSDK/developerGuide/getKey)
+[点我获取Key>>](./guide/getKey)
 
 ##  第2步：创建AndroidStudio项目
 
@@ -28,13 +28,22 @@
 
    4.3.4.b8edc92f.jar文件和一个jniLibs文件夹(文件中包含所有的so库文件)
 
-3. 将 lib 目录下的"*.jar"文件拷贝到 AndroidStudio 项目对应的 app/libs/ 文件夹下。
+3. 将 libs目录下的"*.jar"文件拷贝到 AndroidStudio 项目对应的 app/libs/ 文件夹下。
 
-   ![](http://p.qpic.cn/lbsconsole/0/74ce56c91a50a1fd7c9a4535e5dcfe82/0)
+   <img src="http://p.qpic.cn/lbsconsole/0/74ce56c91a50a1fd7c9a4535e5dcfe82/0" width="50%" align='left'>
+
+    右键该jar包，选择add as library，弹出如下窗口：
+
+   <img src="http://p.qpic.cn/lbsconsole/0/f5138490c1e6c6609b46a9a445362c08/0" align='left'>
+
+   点击OK即可，变成下图所示就是导入成功：
+
+   <img src="http://p.qpic.cn/lbsconsole/0/7681d7ca63b119e850ff821a0c2a0d27/0" align='left'>
 
 4. 将 jniLibs 目录下的所有文件按照原目录格式，拷贝到AndroidStudio项目对应的 app/src/main/jniLibs/ 目录下。
 
-![](http://p.qpic.cn/lbsconsole/0/7fc1ca0c53da067e9bcdc87ca4829087/0)
+<img src="http://p.qpic.cn/lbsconsole/0/7fc1ca0c53da067e9bcdc87ca4829087/0" width="50%" align='left'>
+
 ### 方式二：通过 Gradle 配置 maven 或 jcenter 仓库集成 SDK
 
 1. 在 Project 的 build.gradle 文件中配置 repositories，添加 maven 或 jcenter 仓库地址。

@@ -15,7 +15,7 @@
 
 按照以下操作步骤，正常运行工程，展示基础地图的效果如图
 
-![地图展示效果图](../images/basic/basicmap.png)
+<img src="../images/basic/basicmap.png" align='left'>
 
 ##### 提前准备
 

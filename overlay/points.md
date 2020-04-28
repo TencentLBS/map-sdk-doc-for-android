@@ -61,7 +61,7 @@ Marker marker = mTencentMap.addMarker(new MarkerOptions(position));
 
 效果如下图：
 
-![添加一个默认Marker](../images/overlay/marker.png)
+<img src="../images/overlay/marker.png" align='left'>
 
 ### 自定义Marker属性
 
@@ -92,9 +92,9 @@ mCustomMarker.startAnimation();
 
 效果如下图：
 
-![添加一个默认Marker](../images/overlay/marker_custom.png)
+<img src="../images/overlay/marker_custom.png" align='left'>
 
-### Marker的事件操作
+###  Marker的事件操作
 
 在Marker上，目前支持点击、拖拽两种事件：
 

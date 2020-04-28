@@ -44,7 +44,7 @@ tencentMap.moveCamera(CameraUpdateFactory.newLatLngBounds(
 
 上面绘制的折线有四个顶点，折线颜色为绿色，折线宽度为15像素，效果如下图所示：
 
-![绿线](../images/overlay/green_line.png)
+<img src="../images/overlay/green_line.png" align='left'>
 
 #### 绘制虚线
 
@@ -79,7 +79,7 @@ tencentMap.moveCamera(CameraUpdateFactory.newLatLngBounds(
 
 参数pattern的元素数量必须是偶数个，每对元素分别表示虚线中实线区域的长度，以及空白区域的长度（单位px\)。绘制的虚线效果如下图所示：
 
-![虚线](../images/overlay/dash_line.png)
+<img src="../images/overlay/dash_line.png" align='left'>
 
 #### 带阴影效果的线
 
@@ -101,7 +101,7 @@ Polyline polyline = tencentMap.addPolyline(polylineOptions);
 
 效果如下图所示：
 
-![纹理线](../images/overlay/texture_line.png)
+<img src="../images/overlay/texture_line.png" align='left'>
 
 如果我们提供的纹理不能满足您的需求，您也可以使用自己设计的纹理应用到地图上。使用方法如下：
 
@@ -118,7 +118,7 @@ PolylineOptions polylineOptions = new PolylineOptions()
         .color(2);
 
 ```
-![自定义纹理](../images/overlay/custom_texture_line.png)
+<img src="../images/overlay/custom_texture_line.png" align='left'>
 
 ### 沿线展示纹理图片
 
@@ -139,7 +139,7 @@ PolylineOptions polylineOptions = new PolylineOptions()
     );
     ```
 
-    ![点状纹理线](../images/overlay/dot_line.png)
+    <img src="../images/overlay/dot_line.png" align='left'>
 
 2. 线上叠加纹理，以线上绘制箭头为例
    
@@ -166,7 +166,7 @@ PolylineOptions polylineOptions = new PolylineOptions()
     Polyline polyline = tencentMap.addPolyline(polylineOptions);
     ```
     
-    ![箭头线](../images/overlay/arrow_line.png)
+    <img src="../images/overlay/arrow_line.png" align='left'>
 
 ### 设置线的分段颜色
 
@@ -194,7 +194,7 @@ PolylineOptions polylineOptions = new PolylineOptions()
 mTencentMap.addPolyline(polylineOptions);
 ```
 
-![彩虹蚯蚓](../images/overlay/color_segment_line.png)
+<img src="../images/overlay/color_segment_line.png" align='left'>
 
 ### 擦除
 
@@ -210,7 +210,7 @@ polyline.setEraseable(true);
 polyline.eraseTo(1, new LatLng(39.983919,116.305722));
 ```
 
-![擦除线](../images/overlay/erase_line.png)
+<img src="../images/overlay/erase_line.png" align='left'>
 
 ### 设置擦除颜色
 
@@ -237,7 +237,7 @@ polyline.setEraseable(false);
 polyline.eraseTo(1, new LatLng(39.983919,116.305722));
 ```
 
-![灰色擦除线](../images/overlay/gray_erase_line.png)
+<img src="../images/overlay/gray_erase_line.png" align='left'>
 
 ### 添加文字标注
 
@@ -285,7 +285,7 @@ PolylineOptions polylineOptions = new PolylineOptions()
 Polyline polyline = tencentMap.addPolyline(polylineOptions);
 ```
 
-![文字线](../images/overlay/text_line.png)
+<img src="../images/overlay/text_line.png" align='left'>
 
 ### 添加折线动画
 
