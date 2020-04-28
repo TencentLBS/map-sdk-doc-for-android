@@ -31,4 +31,4 @@ tencentMap.setRestrictBounds(
 ```
 
 效果如下图所示：
-![限制区域](../images/camera/restrict-bound.png)
+<img src="../images/camera/restrict-bound.png" align='left'>

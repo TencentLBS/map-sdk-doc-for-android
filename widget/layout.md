@@ -45,7 +45,7 @@ tencentMap.getUiSettings().setLogoPosition(
 ```
 
 默认在右下角的商标就被调整到了左下角，且指定了距离 MapView 边缘的像素值：
-![左下角图标](../images/widget/logo_left_bottom.png)
+<img src="../images/widget/logo_left_bottom.png" align='left'>
 
 ### 比例尺
 

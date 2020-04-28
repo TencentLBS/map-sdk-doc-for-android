@@ -55,7 +55,7 @@ mMakrer.hideInfoWindow();
 
 信息窗口展现效果图：
 
-![InfoWindow](../images/overlay/infoWindow.png)
+<img src="../images/overlay/infoWindow.png" align='left'>
 
 ### 创建一个自定义信息窗口
 
@@ -79,7 +79,7 @@ mTencentMap.setInfoWindowAdapter(new TencentMap.InfoWindowAdapter() {
 });
 ```
 
-![InfoWindow](../images/overlay/infoWindow_custom.png)
+<img src="../images/overlay/infoWindow_custom.png" align='left'>
 
 ### 注册信息窗口的事件监听
 
@@ -119,9 +119,7 @@ mTencentMap.setOnInfoWindowClickListener(new TencentMap.OnInfoWindowClickListene
 mTencentMap.enableMultipleInfowindow(true);
 ```
 
-
-
-![InfoWindow](../images/overlay/infoWindow_mult.png)
+<img src="../images/overlay/infoWindow_mult.png" align='left'>
 
 ---
 

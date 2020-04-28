@@ -6,8 +6,8 @@
 
 海外图权限默认不对外开放，需要开发者通过官网点击申请试用才能正常显示
 
-![image-20190926163029415](../images/basic/oversea-map.png)
+<img src="../images/basic/oversea-map.png"  align='left'>
 
 ### 效果展示
 
-![image-20190926163850983](../images/basic/oversea-merb.png)
+<img src="../images/basic/oversea-merb.png" align='left'>

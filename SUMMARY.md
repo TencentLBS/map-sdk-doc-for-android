@@ -45,6 +45,7 @@
 
 -----
 * 地图组件
+    * [地图组件接入指南](./module/map-assembly-guide.md)
     * [点聚合](./module/points-cluster.md)
     * [小车平移动画](./module/car-smooth-moving.md)
 
