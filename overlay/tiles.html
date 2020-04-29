@@ -1,0 +1,981 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>自定义瓦片层 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="customlayer.html" />
+    
+    
+    <link rel="prev" href="shapes.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../guide/getKey.html">
+            
+                <a href="../guide/getKey.html">
+            
+                    
+                    获取Key
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../guide/config.html">
+            
+                <a href="../guide/config.html">
+            
+                    
+                    AndroidStudio配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../guide/notice.html">
+            
+                <a href="../guide/notice.html">
+            
+                    
+                    开发注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    地图显示
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../basic/show-a-map.html">
+            
+                <a href="../basic/show-a-map.html">
+            
+                    
+                    显示基础地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../basic/change-map-type.html">
+            
+                <a href="../basic/change-map-type.html">
+            
+                    
+                    切换地图类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../basic/indoor-map.html">
+            
+                <a href="../basic/indoor-map.html">
+            
+                    
+                    室内地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../basic/style-map.html">
+            
+                <a href="../basic/style-map.html">
+            
+                    
+                    个性化地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../basic/show-3d-building.html">
+            
+                <a href="../basic/show-3d-building.html">
+            
+                    
+                    显示3D建筑物
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../basic/oversea-map.html">
+            
+                <a href="../basic/oversea-map.html">
+            
+                    
+                    海外地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    地图视野控制
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../camera/set-camera.html">
+            
+                <a href="../camera/set-camera.html">
+            
+                    
+                    设置地图视野
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../camera/animate-camera.html">
+            
+                <a href="../camera/animate-camera.html">
+            
+                    
+                    视野动画操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../camera/show-map-region.html">
+            
+                <a href="../camera/show-map-region.html">
+            
+                    
+                    视野范围设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../camera/restrict-map-region.html">
+            
+                <a href="../camera/restrict-map-region.html">
+            
+                    
+                    限制显示区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    地图控件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../widget/basic-setting.html">
+            
+                <a href="../widget/basic-setting.html">
+            
+                    
+                    基础控件设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../widget/layout.html">
+            
+                <a href="../widget/layout.html">
+            
+                    
+                    控件位置调整
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    覆盖物
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="points.html">
+            
+                <a href="points.html">
+            
+                    
+                    绘制点标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="infoWindow.html">
+            
+                <a href="infoWindow.html">
+            
+                    
+                    绘制窗口信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="lines.html">
+            
+                <a href="lines.html">
+            
+                    
+                    绘制线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="shapes.html">
+            
+                <a href="shapes.html">
+            
+                    
+                    绘制面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4.5" data-path="tiles.html">
+            
+                <a href="tiles.html">
+            
+                    
+                    自定义瓦片层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="customlayer.html">
+            
+                <a href="customlayer.html">
+            
+                    
+                    个性化图层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="hotmap.html">
+            
+                <a href="hotmap.html">
+            
+                    
+                    绘制热力图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="level.html">
+            
+                <a href="level.html">
+            
+                    
+                    元素压盖顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../location/location.html">
+            
+                <a href="../location/location.html">
+            
+                    
+                    显示定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" >
+            
+                <span>
+            
+                    
+                    地理信息检索
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../service/summary.html">
+            
+                <a href="../service/summary.html">
+            
+                    
+                    检索功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../service/place.html">
+            
+                <a href="../service/place.html">
+            
+                    
+                    地点搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../service/suggestion.html">
+            
+                <a href="../service/suggestion.html">
+            
+                    
+                    关键词输入提示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.4" data-path="../service/district.html">
+            
+                <a href="../service/district.html">
+            
+                    
+                    行政区划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.5" data-path="../service/geo-code.html">
+            
+                <a href="../service/geo-code.html">
+            
+                    
+                    地址解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.6" data-path="../service/regeo-code.html">
+            
+                <a href="../service/regeo-code.html">
+            
+                    
+                    逆地址解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.7" data-path="../service/route-plan.html">
+            
+                <a href="../service/route-plan.html">
+            
+                    
+                    路线规划服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" >
+            
+                <span>
+            
+                    
+                    地图事件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../event/gesture-control.html">
+            
+                <a href="../event/gesture-control.html">
+            
+                    
+                    手势控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../event/status-callback.html">
+            
+                <a href="../event/status-callback.html">
+            
+                    
+                    状态事件回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    地图组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../module/map-assembly-guide.html">
+            
+                <a href="../module/map-assembly-guide.html">
+            
+                    
+                    地图组件接入指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../module/points-cluster.html">
+            
+                <a href="../module/points-cluster.html">
+            
+                    
+                    点聚合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../module/car-smooth-moving.html">
+            
+                <a href="../module/car-smooth-moving.html">
+            
+                    
+                    小车平移动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    地图工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../utils/snapshot.html">
+            
+                <a href="../utils/snapshot.html">
+            
+                    
+                    地图截屏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../utils/transfer.html">
+            
+                <a href="../utils/transfer.html">
+            
+                    
+                    坐标转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >自定义瓦片层</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x81EA;&#x5B9A;&#x4E49;&#x74E6;&#x7247;&#x5C42;">&#x81EA;&#x5B9A;&#x4E49;&#x74E6;&#x7247;&#x5C42;</h1>
+<h3 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h3>
+<h5 id="&#x4EC0;&#x4E48;&#x662F;&#x74E6;&#x7247;">&#x4EC0;&#x4E48;&#x662F;&#x74E6;&#x7247;</h5>
+<p>&#x74E6;&#x7247;&#x662F;&#x7EC4;&#x6210;&#x5730;&#x56FE;&#x5F62;&#x8C8C;&#x7684;&#x57FA;&#x672C;&#x5143;&#x7D20;&#xFF0C;&#x817E;&#x8BAF;&#x5730;&#x56FE;SDK&#x5C06;&#x4E16;&#x754C;&#x5730;&#x56FE;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x7F29;&#x653E;&#x7EA7;&#x522B;&#x4E0B;&#xFF0C;&#x4EE5;&#x9AD8;&#x6E05;256*256&#x6216;&#x8005;&#x6807;&#x51C6;512*521&#x4E3A;&#x5355;&#x5143;&#x5212;&#x5206;&#x6210;&#x5730;&#x56FE;&#x74E6;&#x7247;&#x6570;&#x636E;&#x3002;
+&#x9664;&#x4E86;&#x5185;&#x7F6E;&#x7684;&#x74E6;&#x7247;&#x8986;&#x76D6;&#x5C42;&#xFF08;<a href="hotmap.html">&#x70ED;&#x529B;&#x56FE;</a>&#x3001;&#x6D77;&#x5916;&#x56FE;&#x3001;<a href="customlayer.html">&#x4E2A;&#x6027;&#x5316;&#x56FE;&#x5C42;</a>&#x7B49;&#xFF09;&#x4E4B;&#x5916;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;TileProvider&#x6765;&#x5B9E;&#x73B0;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x74E6;&#x7247;&#x529F;&#x80FD;&#x3002;</p>
+<h5 id="&#x5173;&#x4E8E;&#x5730;&#x56FE;&#x5750;&#x6807;&#x7CFB;&#x548C;&#x7F29;&#x653E;&#x7EA7;&#x522B;">&#x5173;&#x4E8E;&#x5730;&#x56FE;&#x5750;&#x6807;&#x7CFB;&#x548C;&#x7F29;&#x653E;&#x7EA7;&#x522B;</h5>
+<p>&#x817E;&#x8BAF;&#x5730;&#x56FE;&#x5750;&#x6807;&#x662F;&#x4F7F;&#x7528;GCJ-02&#x5750;&#x6807;&#xFF08;&#x6295;&#x5F71;&#x5750;&#x6807;&#x7CFB;&#xFF09;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="https://lbs.qq.com/webservice_v1/guide-convert.html" target="_blank">&#x817E;&#x8BAF;&#x5750;&#x6807;&#x8F6C;&#x6362;&#x670D;&#x52A1;</a>&#x5C06;&#x5176;&#x4ED6;&#x5750;&#x6807;&#x7CFB;&#x5750;&#x6807;&#x8F6C;&#x6362;&#x6210;GCJ-02&#x5750;&#x6807;&#x3002;
+&#x76EE;&#x524D;&#x53EF;&#x652F;&#x6301;&#x7F16;&#x8F91;&#x7684;&#x7F29;&#x653E;&#x7EA7;&#x522B;&#x4E3A;[3-18]&#xFF0C;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>TencentMap.getMinZoomLevel()</code>&#x548C;<code>TencentMap.getMaxZoomLevel()</code>&#x63A5;&#x53E3;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6700;&#x5927;&#x548C;&#x6700;&#x5C0F;&#x7F29;&#x653E;&#x7EA7;&#x522B;&#xFF0C;&#x6765;&#x8C03;&#x6574;&#x5BF9;&#x5E94;&#x7684;&#x914D;&#x7F6E;</p>
+<h5 id="&#x4EC0;&#x4E48;&#x662F;&#x74E6;&#x7247;&#x5C42;">&#x4EC0;&#x4E48;&#x662F;&#x74E6;&#x7247;&#x5C42;</h5>
+<p>&#x74E6;&#x7247;&#x5C42;&#xFF0C;&#x662F;&#x4E3A;&#x4E86;&#x5C55;&#x793A;&#x5730;&#x56FE;&#x4E2A;&#x6027;&#x5316;&#x6570;&#x636E;&#x63D0;&#x4F9B;&#x80FD;&#x529B;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x628A;&#x67D0;&#x4E9B;&#x533A;&#x57DF;&#x5185;&#x7684;&#x5730;&#x56FE;&#x74E6;&#x7247;&#xFF0C;&#x8986;&#x76D6;&#x6210;&#x72EC;&#x7279;&#x98CE;&#x683C;&#x7684;&#x56FE;&#x7247;&#x6570;&#x636E;&#x3002;
+&#x5730;&#x56FE;SDK&#x63D0;&#x4F9B;&#x4E86;&#x975E;&#x5E38;&#x7B80;&#x4FBF;&#x7684;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#xFF0C;&#x6765;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x74E6;&#x7247;&#x80FD;&#x529B;&#x3002;</p>
+<p>&#x5982;&#x5F00;&#x53D1;&#x8005;&#x6CA1;&#x6709;&#x57FA;&#x7840;&#x5730;&#x56FE;&#x7ED8;&#x5236;&#x6570;&#x636E;&#xFF0C;&#x817E;&#x8BAF;&#x5730;&#x56FE;&#x63D0;&#x4F9B;&#x4E86;&#x4E91;&#x7AEF;<a href="https://lbs.qq.com/console/customized/set/" target="_blank">&#x4E2A;&#x6027;&#x5316;&#x5730;&#x56FE;</a>&#x80FD;&#x529B;&#xFF0C;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x5728;&#x7EBF;&#x4FEE;&#x6539;&#x5730;&#x56FE;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F;
+&#x4EE5;&#x671F;&#x671B;&#x6EE1;&#x8DB3;&#x4E2A;&#x6027;&#x5316;&#x914D;&#x7F6E;&#x6837;&#x5F0F;&#x7684;&#x9700;&#x6C42;&#x3002;</p>
+<p>&#x5982;&#x5F00;&#x53D1;&#x8005;&#x6709;&#x5BA4;&#x5185;CAD&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5E0C;&#x671B;&#x5728;&#x5730;&#x56FE;&#x4E0A;&#x8FDB;&#x884C;&#x5C55;&#x793A;&#xFF0C;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x5546;&#x52A1;&#x7EA7;<a href="https://lbs.qq.com/indoor/index.html" target="_blank">&#x5BA4;&#x5185;&#x5730;&#x56FE;</a>&#x5408;&#x4F5C;&#x80FD;&#x529B;&#xFF0C;&#x80FD;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x8005;&#x66F4;&#x5FEB;&#x7684;&#x5B8C;&#x6210;&#x9700;&#x6C42;&#x3002;</p>
+<p>&#x5982;&#x5F00;&#x53D1;&#x8005;&#x6709;&#x751F;&#x4EA7;&#x74E6;&#x7247;&#x5730;&#x56FE;&#x6570;&#x636E;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x8FD8;&#x4E0D;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x63A5;&#x5165;&#x7684;&#x8BDD;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E24;&#x90E8;&#x5206;&#x8BB2;&#x89E3;&#xFF0C;&#x5B8C;&#x6210;&#x8FD9;&#x90E8;&#x5206;&#x7684;&#x6307;&#x5BFC;&#xFF1A;</p>
+<ol>
+<li>&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x74E6;&#x7247;&#x5C42;</li>
+<li>&#x79FB;&#x9664;&#x74E6;&#x7247;&#x5C42;</li>
+</ol>
+<h3 id="&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x74E6;&#x7247;&#x5C42;">&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x74E6;&#x7247;&#x5C42;</h3>
+<p>&#x4F7F;&#x7528;UrlTileProvider&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x80FD;&#x591F;&#x66F4;&#x7B80;&#x4FBF;&#x5730;&#x5B9E;&#x73B0;&#x74E6;&#x7247;&#x6570;&#x636E;&#x7684;&#x751F;&#x6210;&#xFF0C;&#x5B83;&#x5B9E;&#x73B0;&#x4E86;TileProvider&#x63A5;&#x53E3;&#xFF0C;&#x901A;&#x8FC7;(x,y)&#x5750;&#x6807;&#x548C;zoom&#x7EA7;&#x522B;&#x6765;&#x533A;&#x5206;&#x4E0D;&#x540C;URL&#xFF0C;&#x8BF7;&#x6C42;URL&#x83B7;&#x53D6;&#x74E6;&#x7247;&#x6570;&#x636E;&#xFF0C;
+&#x5E76;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x74E6;&#x7247;&#x56FE;&#x7247;&#x7684;&#x751F;&#x6210;&#x3002;</p>
+<p>&#x8BE6;&#x7EC6;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ol>
+<li>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x7EE7;&#x627F;<code>UrlTileProvider</code></li>
+<li>&#x91CD;&#x5199;<code>getTileUrl(x, y, zoom)</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x5BF9;&#x5E94;&#x7684;URL&#x6765;&#x6784;&#x9020;&#x6BCF;&#x4E00;&#x4E2A;&#x74E6;&#x7247;</li>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>TileProviderOptions</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x76F8;&#x5173;&#x9009;&#x9879;&#xFF1A;<ul>
+<li><code>diskCacheDir</code>&#xFF1A;&#x78C1;&#x76D8;&#x7F13;&#x5B58;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x6CA1;&#x6709;&#x78C1;&#x76D8;&#x7F13;&#x5B58;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x540D;&#x6765;&#x5F00;&#x542F;&#x78C1;&#x76D8;&#x7F13;&#x5B58;&#xFF0C;
+&#x76EE;&#x5F55;&#x540D;&#x4E0D;&#x652F;&#x6301;&#x8D8A;&#x7EA7;&#x7B26;&#x53F7;&#xFF08;..)&#xFF0C;&#x652F;&#x6301;&#x5206;&#x7EA7;&#x7B26;&#x53F7;&#xFF08;/&#xFF09;&#x3002;</li>
+<li><code>betterQuality</code>&#xFF1A;&#x74E6;&#x7247;&#x8D28;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;true&#xFF0C;&#x5373;&#x9AD8;&#x6E05;&#x5206;&#x8FA8;&#x7387;(256*256)</li>
+<li><code>zIndex</code>&#xFF1A;&#x8BBE;&#x7F6E;&#x74E6;&#x7247;&#x5C42;&#x7EA7;&#x5E8F;&#x53F7;&#xFF0C;&#x503C;&#x8D8A;&#x5927;&#x8D8A;&#x5728;&#x5730;&#x56FE;&#x7684;&#x9876;&#x5C42;</li>
+</ul>
+</li>
+<li>&#x8C03;&#x7528;<code>TencentMap.addTileOverlay()</code>&#x63A5;&#x53E3;&#x6DFB;&#x52A0;&#x5230;&#x5730;&#x56FE;&#x4E0A;</li>
+</ol>
+<p>&#x74E6;&#x7247;&#x5BB9;&#x5668;&#x7C7B;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyTileProvider</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">UrlTileProvider</span> </span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> URL <span class="hljs-title">getTileUrl</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">int</span> zoom)</span> </span>{
+      <span class="hljs-comment">//1.&#x8FC7;&#x6EE4;&#x65E0;&#x6548;&#x74E6;&#x7247;&#x8BF7;&#x6C42;  </span>
+      <span class="hljs-keyword">if</span> (!checkTileExists(x, y, zoom)){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+      }
+      <span class="hljs-comment">//2.&#x914D;&#x7F6E;&#x74E6;&#x7247;&#x8BF7;&#x6C42;&#x94FE;&#x63A5;</span>
+      String url = String.format(<span class="hljs-string">&quot;https://my.image.server/images/%d/%d/%d.png&quot;</span>, zoom, x, y);     
+      <span class="hljs-keyword">try</span> {
+        <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x74E6;&#x7247;URL</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> URL(url);
+      } <span class="hljs-keyword">catch</span> (MalformedURLException e) {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> AssertionError(e);
+      }
+    }
+    <span class="hljs-comment">/**
+     * &#x68C0;&#x67E5;&#x5F53;&#x524D;&#x74E6;&#x7247;&#x5730;&#x5740;&#x662F;&#x5426;&#x6709;&#x6570;&#x636E;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">checkTileExists</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">int</span> zoom)</span> </span>{
+      <span class="hljs-keyword">int</span> minZoom = <span class="hljs-number">12</span>;
+      <span class="hljs-keyword">int</span> maxZoom = <span class="hljs-number">16</span>;
+
+      <span class="hljs-keyword">if</span> ((zoom &lt; minZoom || zoom &gt; maxZoom)) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+      }
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>; 
+    }
+}
+</code></pre>
+<p>&#x74E6;&#x7247;&#x5BB9;&#x5668;&#x7BA1;&#x7406;&#x7C7B;</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DemoTileProviderManager</span> </span>{
+    <span class="hljs-comment">/**
+     * &#x6DFB;&#x52A0;&#x74E6;&#x7247;&#x5C42;
+     */</span>     
+    <span class="hljs-function"><span class="hljs-keyword">public</span> TileOverlay <span class="hljs-title">addMyTileProvider</span><span class="hljs-params">(TencentMap map)</span></span>{
+      MyTileProvider provider = <span class="hljs-keyword">new</span> MyTileProvider();
+      TileProviderOptions options = <span class="hljs-keyword">new</span> TileProviderOptions()
+                .diskCacheDir(<span class="hljs-string">&quot;myTile/style1&quot;</span>)<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x74E6;&#x7247;&#x7F13;&#x5B58;&#x76EE;&#x5F55;</span>
+                .betterQuality(<span class="hljs-keyword">true</span>)<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x74E6;&#x7247;&#x56FE;&#x7247;&#x8D28;&#x91CF;</span>
+                .zIndex(<span class="hljs-number">10</span>)<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x74E6;&#x7247;&#x538B;&#x76D6;&#x7EA7;&#x522B;</span>
+                .provider(provider);
+      <span class="hljs-keyword">return</span> map.addTileOverlay(options);
+    }
+}
+</code></pre>
+<h3 id="&#x79FB;&#x9664;&#x74E6;&#x7247;&#x5C42;">&#x79FB;&#x9664;&#x74E6;&#x7247;&#x5C42;</h3>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x7528;TileOverlay.remove()&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x79FB;&#x9664;</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DemoProvider</span> </span>{
+    <span class="hljs-comment">/**
+     * &#x79FB;&#x9664;&#x74E6;&#x7247;&#x5C42;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">removeTileOverlay</span><span class="hljs-params">()</span> </span>{
+        myTileOverlay.remove();
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="shapes.html" class="navigation navigation-prev " aria-label="Previous page: 绘制面">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="customlayer.html" class="navigation navigation-next " aria-label="Next page: 个性化图层">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"自定义瓦片层","level":"2.4.5","depth":2,"next":{"title":"个性化图层","level":"2.4.6","depth":2,"path":"overlay/customlayer.md","ref":"./overlay/customlayer.md","articles":[]},"previous":{"title":"绘制面","level":"2.4.4","depth":2,"path":"overlay/shapes.md","ref":"./overlay/shapes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr"],"pluginsConfig":{"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"overlay/tiles.md","mtime":"2020-04-27T06:06:55.273Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-29T02:39:16.469Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
