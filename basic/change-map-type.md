@@ -10,29 +10,29 @@
 
 1.MAP_TYPE_NORMAL 标准图
 
-<img src="../images/basic/map-style-normal.png" align='left'>
+<img src="../images/basic/map-style-normal.png"  width="50%">
 
 2.MAP_TYPE_NAVI 导航图
 
-<img src="../images/basic/map-style-navi.png" align='left'>
+<img src="../images/basic/map-style-navi.png"  width="50%">
 
 3.MAP_TYPE_SATELLITE 卫星图
 
-<img src="../images/basic/map-style-satellite.png"  align='left'>
+<img src="../images/basic/map-style-satellite.png"  width="50%">
 
 4.MAP_TYPE_NIGHT 夜间图
 
-<img src="../images/basic/map-style-night.png" align='left'>
+<img src="../images/basic/map-style-night.png" width="50%">
 
 以及一些组合地图类型
 
 1.MAP_TYPE_TRAFFIC_NAVI 导航+路况白昼图
 
-<img src="../images/basic/map-style-navi-daytime.png" align='left'>
+<img src="../images/basic/map-style-navi-daytime.png"  width="50%">
 
 2.MAP_TYPE_TRAFFIC_NIGHT 导航+路况夜间图
 
-<img src="../images/basic/map-style-navi-night.png" align='left'>
+<img src="../images/basic/map-style-navi-night.png"  width="50%">
 
 ### 设置地图类型
 

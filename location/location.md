@@ -4,7 +4,7 @@
 
 地图 SDK 提供了定位点控件，帮助开发者方便地实现地图上的定位点绘制需求。下面是一个定位点的效果图：
 
-<img src="../images/widget/default_location.png" align='left'>
+<img src="../images/widget/default_location.png" width="50%">
 
 <span style="color:red">请注意，地图 SDK 只提供地图的展示效果，定位能力需要接入 [定位SDK](https://lbs.qq.com/geo/index.html)。</span>
 

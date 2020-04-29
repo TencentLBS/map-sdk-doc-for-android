@@ -42,4 +42,4 @@
 
 下图左上角为腾讯地图 SDK 提供的指南针：
 
-<img src="..\images\widget\compass.png" align='left'>
+<img src="..\images\widget\compass.png" width="500">

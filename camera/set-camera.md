@@ -41,4 +41,4 @@ tencentMap.moveCamera(cameraSigma); //移动地图
 
 效果如下图所示：
 
-<img src="../images/camera/move-to-sigma.jpg" align='left'>
+<img src="../images/camera/move-to-sigma.jpg" width="50%">

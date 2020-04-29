@@ -11,7 +11,7 @@
 mTencent.setBuildingEnable(true);
 ```
 
-<img src="../images/basic/building-3d.png" align='left'>
+<img src="../images/basic/building-3d.png"  width="50%">
 
 ### 隐藏3D建筑物
 
@@ -20,5 +20,7 @@ mTencent.setBuildingEnable(true);
 mTencent.setBuildingEnable(false);
 ```
 
-<img src="../images/basic/building-2d.png" algin='left'>
+
+
+<img src="../images/basic/building-2d.png" width="50%">
 
