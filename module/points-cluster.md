@@ -104,5 +104,5 @@ ClusterManager：点聚合管理类
 
 ## 效果图
 
-<img src="http://p.qpic.cn/lbsconsole/0/a22900f7f0b0108ac815d32e092ba303/0" align='left'>
+<img src="http://p.qpic.cn/lbsconsole/0/a22900f7f0b0108ac815d32e092ba303/0" width="50%">
 

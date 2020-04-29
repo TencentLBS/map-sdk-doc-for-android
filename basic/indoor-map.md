@@ -52,11 +52,11 @@ mTencentMap.moveCamera(
 
 以欧美汇为例的效果图如下：
 
-<img src="../images/basic/indoor-omh.png" align='left'>
+<img src="../images/basic/indoor-omh.png"  width="50%">
 
 
 
-<img src="../images/basic/indoor-omh-3d.png" align='left'>
+<img src="../images/basic/indoor-omh-3d.png"  width="50%">
 
 ### 操作交互
 

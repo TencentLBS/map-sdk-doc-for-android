@@ -44,7 +44,8 @@ tencentMap.moveCamera(CameraUpdateFactory.newLatLngBoundsWithMapCenter(
 ```
 
 效果如下图所示：
-<img src="../images/camera/latlng-bound-with-center.png" align='left'>
+
+<img src="../images/camera/latlng-bound-with-center.png" width="500">
 
 2、将所有 `Marker` 展示出来：
 
@@ -68,4 +69,5 @@ tencentMap.moveCamera(CameraUpdateFactory.newCameraPosition(
 ```
 
 效果如下图所示：
-<img src="../images/camera/marker-bound.png" align='left'>
+
+<img src="../images/camera/marker-bound.png" width="500">

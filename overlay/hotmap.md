@@ -10,7 +10,7 @@
 
 新版本热力图显示效果更细腻、自然，在操作热力图的过程也更加简单，下面是一张截图效果：
 
-<img src="../images/overlay/heatmap.png" align='left'>
+<img src="../images/overlay/heatmap.png" width="500">
 
 图1：热力图示例效果
 
